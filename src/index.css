@@ -7,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  /* background: linear-gradient(rgb(1, 1, 55), rgb(0, 0, 36)); */
+  background: linear-gradient(rgb(1, 1, 55), rgb(0, 0, 36));
+  color: aliceblue;
 }
 
 #header {
@@ -76,4 +77,59 @@ body {
   align-items: center;
   gap: 0.5em;
   font-size: 3em;
+}
+
+#jewels {
+  width: 90%;
+  max-width: 110em;
+  list-style: none;
+  margin: 1.5em auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 2em;
+}
+
+.gem-item {
+  background-color: rgb(6, 6, 116);
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(89, 64, 215, 0.3);
+  overflow: hidden;
+}
+
+.gem-item article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gem-item img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.gem-item h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin: 0.8em 0;
+}
+
+.gem-item h5 {
+  display: inline-block;
+  background-color: rgb(39, 9, 83);
+  color: rgb(241, 108, 37);
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 0 0 0 6em;
+}
+
+.gem-item p {
+  margin: 1em;
+  font-size: 1em;
+  letter-spacing: 0.08em;
 }

@@ -15,8 +15,7 @@ export default function Jewels() {
   console.log(loadedJewels);
 
   return (
-    // <h1>Jewels</h1>
-    <ul>
+    <ul id="jewels">
       {loadedJewels.map((gem) => (
         <JewelProduct key={gem.id} gem={gem} />
       ))}

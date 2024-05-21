@@ -1,9 +1,30 @@
 [
   {
     "id": "j1",
-    "name": "Silver-Gold bracelet",
+    "name": "Silver-Gold Bracelet",
     "price": "8.99",
     "description": "Silver bracelet in the shape of a penny with a diameter of 10mm.Available in three shades, silver, gold and rose gold, it is 18cm long and weighs 4 grams.",
     "image": "images/bratara-banut.jpg"
+  },
+  {
+    "id": "j2",
+    "name": "Onyx Bracelet",
+    "price": "59.99",
+    "description": "Semi-fixed silver bracelet with natural faceted onyx, weighing 67 grams.",
+    "image": "images/bratara-onix.jpg"
+  },
+  {
+    "id": "j3",
+    "name": "Mystic Topaz Bracelet",
+    "price": "39.99",
+    "description": "Silver bracelet with three mystical topaz semi-precious stones on a cubic zirconia mount. The bracelet is 19 cm long and weighs 18 grams.",
+    "image": "images/bratara-topaz.jpg"
+  },
+  {
+    "id": "j4",
+    "name": "Original Zultanite Bracelet",
+    "price": "19.99",
+    "description": "Silver bracelet with three original zultanite semi-precious stones on a cubic zirconia mount. The bracelet is 18 cm long and weighs 14 grams.",
+    "image": "images/bratara-zultanite.jpg"
   }
 ]
