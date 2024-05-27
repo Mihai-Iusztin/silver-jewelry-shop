@@ -2,8 +2,21 @@ import silverlandLogo from '../assets/silverland-logo.jpg';
 import { FaShoppingCart } from 'react-icons/fa';
 import { GrContact } from 'react-icons/gr';
 import { FaShippingFast } from 'react-icons/fa';
+import CartContext from '../store/CartContext';
+import { useContext } from 'react';
 
 export default function Header() {
+  const cartCtx = useContext(CartContext);
+
+  console.log(cartCtx);
+
+  const cartProductsTotal = cartCtx.products.reduce(
+    (totalProducts, product) => {
+      return totalProducts + product.quantity;
+    },
+    0
+  ); //total number of the products from cart
+
   return (
     <header id="header">
       <div id="header-title">
@@ -13,7 +26,7 @@ export default function Header() {
         </div>
         <div>
           <button id="cart-btn">
-            <FaShoppingCart color="red" /> (0)
+            <FaShoppingCart color="red" /> {cartProductsTotal}
           </button>
         </div>
       </div>

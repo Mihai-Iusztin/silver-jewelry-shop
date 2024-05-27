@@ -26,5 +26,61 @@
     "price": "19.99",
     "description": "Silver bracelet with three original zultanite semi-precious stones on a cubic zirconia mount. The bracelet is 18 cm long and weighs 14 grams.",
     "image": "images/bratara-zultanite.jpg"
+  },
+  {
+    "id": "j5",
+    "name": "Lapis-Lazuli Earrings",
+    "price": "11.99",
+    "description": "Silver earrings with natural semi-precious stones, lapis lazuli and moonstone. The earrings have a screw closure system and 4 grams.",
+    "image": "images/cercei-lapis-lazuli.jpg"
+  },
+  {
+    "id": "j6",
+    "name": "Life Tree Earrings",
+    "price": "4.99",
+    "description": "Silver earrings symbolizing the Tree of Life adorned with small colored cubic zirconia. The earrings have a classic closure system and 3 grams.",
+    "image": "images/cercei-pomul-vietii.jpg"
+  },
+  {
+    "id": "j7",
+    "name": "Natural Turcoaz Earrings",
+    "price": "9.99",
+    "description": "Silver earrings with a small natural turquoise cube. The earrings are 8mm, 'African hook' closure system and 7 grams.",
+    "image": "images/cercei-turcoaz.jpg"
+  },
+  {
+    "id": "j8",
+    "name": "Original Zultanite Earrings",
+    "price": "19.99",
+    "description": "Silver earrings with natural semi-precious stones from zultanite and cubic zirconia. The earrings have a classic closing system and 6 grams.",
+    "image": "images/cercei-zultanite.jpg"
+  },
+  {
+    "id": "j9",
+    "name": "Special Fancy Ring",
+    "price": "29.99",
+    "description": "Special model of silver ring with multiple colored semi-precious stones on a mount with a special appearance.",
+    "image": "images/inel-arici.jpg"
+  },
+  {
+    "id": "j10",
+    "name": "Classic Ring with Turquoise",
+    "price": "49.99",
+    "description": "Silver ring with a slightly antiqued look and a natural oval turquoise.",
+    "image": "images/inel-turcoaz.jpg"
+  },
+  {
+    "id": "j11",
+    "name": "Vintage Ring with natural Green Stone",
+    "price": "39.99",
+    "description": "Vintage silver ring with a natural semi-precious stone having an intense green hue.",
+    "image": "images/inel-vintage.jpg"
+  },
+  {
+    "id": "j12",
+    "name": "Natural Zultanite Silver Ring",
+    "price": "29.99",
+    "description": "Silver ring with an oval natural zultanite semi-precious stone.",
+    "image": "images/inel-zultanite.jpg"
   }
 ]
