@@ -9,7 +9,7 @@ export default function JewelProduct({ gem }) {
   function addProductToCart() {
     cartCtx.addProduct(gem);
   }
-  console.log(cartCtx);
+
   return (
     <li className="gem-item">
       <article>
