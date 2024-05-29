@@ -133,3 +133,29 @@ body {
   font-size: 1em;
   letter-spacing: 0.08em;
 }
+
+.modal {
+  border: none;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  width: 80%;
+  max-width: 50rem;
+  animation: slide 0.5s ease-out forwards;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
