@@ -11,7 +11,8 @@ export function ModalContextProvider({ children }) {
   const [userModal, setUserModal] = useState('');
 
   function showCart() {
-    setUserModal('chart');
+    setUserModal('cart');
+    console.log('Show in context!');
   }
 
   function showConfirmation() {
@@ -28,6 +29,8 @@ export function ModalContextProvider({ children }) {
     showConfirmation,
     hideModal,
   };
+
+  console.log(userModalCtx);
 
   return (
     <ModalContext.Provider value={userModalCtx}>

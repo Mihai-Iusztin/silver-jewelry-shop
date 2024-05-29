@@ -13,6 +13,7 @@ export default function Header() {
   console.log(modalCtx);
 
   function handleShowCart() {
+    console.log('Show the cart!');
     modalCtx.showCart();
   }
 
@@ -32,12 +33,13 @@ export default function Header() {
         </div>
         <div>
           <button id="cart-btn">
-            <FaShoppingCart color="red" /> {cartProductsTotal}
+            <FaShoppingCart color="red" onClick={handleShowCart} />{' '}
+            {cartProductsTotal}
           </button>
         </div>
       </div>
       <div id="header-contact">
-        <button id="contact-btn" onClick={handleShowCart}>
+        <button id="contact-btn">
           <GrContact color="red" /> Contact Us
         </button>
         <p id="shipping-icon">

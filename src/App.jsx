@@ -1,13 +1,18 @@
 import Header from './components/Header';
 import Jewels from './components/Jewels';
+import Cart from './components/Cart';
 import { CartContextProvider } from './store/CartContext';
+import { ModalContextProvider } from './store/ModalContext';
 
 function App() {
   return (
-    <CartContextProvider>
-      <Header />
-      <Jewels />
-    </CartContextProvider>
+    <ModalContextProvider>
+      <CartContextProvider>
+        <Header />
+        <Jewels />
+        <Cart />
+      </CartContextProvider>
+    </ModalContextProvider>
   );
 }
 
