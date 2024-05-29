@@ -4,11 +4,17 @@ import { GrContact } from 'react-icons/gr';
 import { FaShippingFast } from 'react-icons/fa';
 import CartContext from '../store/CartContext';
 import { useContext } from 'react';
+import ModalContext from '../store/ModalContext';
 
 export default function Header() {
   const cartCtx = useContext(CartContext);
+  const modalCtx = useContext(ModalContext);
 
-  console.log(cartCtx);
+  console.log(modalCtx);
+
+  function handleShowCart() {
+    modalCtx.showCart();
+  }
 
   const cartProductsTotal = cartCtx.products.reduce(
     (totalProducts, product) => {
@@ -31,7 +37,7 @@ export default function Header() {
         </div>
       </div>
       <div id="header-contact">
-        <button id="contact-btn">
+        <button id="contact-btn" onClick={handleShowCart}>
           <GrContact color="red" /> Contact Us
         </button>
         <p id="shipping-icon">
