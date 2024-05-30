@@ -20,6 +20,10 @@ export default function Cart() {
     modalCtx.hideModal();
   }
 
+  function handleConfirmation() {
+    modalCtx.showConfirmation();
+  }
+
   return (
     <Modal open={modalCtx.userModal === 'cart'} className="cart-modal">
       <h2>Your Shopping Cart</h2>
@@ -40,7 +44,9 @@ export default function Cart() {
       </h3>
       <div className="cart-btn">
         <Button onClick={handleClose}>Close</Button>
-        {cartCtx.products.length > 0 && <Button>Confirm</Button>}
+        {cartCtx.products.length > 0 && (
+          <Button onClick={handleConfirmation}>Confirm</Button>
+        )}
       </div>
     </Modal>
   );
