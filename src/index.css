@@ -148,6 +148,100 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.cart-modal {
+  list-style: none;
+}
+
+.cart-modal h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: blue;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+}
+.cart-product-qty {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.cart-product-qty button {
+  font-size: 1.8rem;
+  background-color: rgb(21, 21, 115);
+  color: aliceblue;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-product-qty button:hover {
+  cursor: pointer;
+  background-color: rgb(16, 16, 161);
+  color: rgb(227, 185, 18);
+}
+
+.cart-product-qty span {
+  font-weight: 700;
+}
+
+.cart-total {
+  font-size: 2rem;
+  margin: 0 2.2rem;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+
+.cart-btn button {
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: rgb(5, 5, 111);
+  color: aliceblue;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgb(5, 5, 111);
+}
+
+.cart-btn button:hover {
+  cursor: pointer;
+  background-color: rgb(3, 3, 56);
+  color: rgb(245, 241, 10);
+  box-shadow: 0 0.8rem 0.5rem -0.5rem rgb(5, 5, 111);
+  transform: translateY(-0.25rem);
+  transition: all 0.2s;
+}
+
+.addToCart-btn {
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  color: rgb(5, 5, 111);
+}
+
+.addToCart-btn:hover {
+  cursor: pointer;
+  background-color: rgb(3, 3, 56);
+  color: rgb(245, 241, 10);
+  box-shadow: 0 0.8rem 0.5rem -0.5rem rgb(5, 5, 111);
+  transform: translateY(-0.25rem);
+  transition: all 0.2s;
+}
+
 @keyframes slide {
   from {
     opacity: 0;

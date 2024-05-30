@@ -20,7 +20,9 @@ export default function JewelProduct({ gem }) {
           <p>{gem.description}</p>
         </div>
         <p>
-          <Button onClick={addProductToCart}>Add to Order</Button>
+          <Button onClick={addProductToCart} className="addToCart-btn">
+            Add to Order
+          </Button>
         </p>
       </article>
     </li>
