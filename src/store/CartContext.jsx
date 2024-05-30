@@ -30,10 +30,12 @@ function cartReducer(state, action) {
     return { ...state, products: updatedProducts }; // return the new, updated state
   }
   if (action.type === 'REMOVE_PRODUCT') {
-    const existingProductIndex = state.products.findIndex((product) => {
-      product.id === action.id; // find the index of the product based on it's id
-    });
+    // find the index of the product based on it's id
+    const existingProductIndex = state.products.findIndex(
+      (product) => product.id === action.id
+    );
     const existingProduct = state.products[existingProductIndex]; // save the selected product
+    console.log(existingProduct);
     const updatedProducts = [...state.products]; // copy of array
     if (existingProduct.quantity === 1) {
       updatedProducts.splice(existingProductIndex, 1); //remove the product from the array
@@ -42,9 +44,10 @@ function cartReducer(state, action) {
         ...existingProduct,
         quantity: existingProduct.quantity - 1,
       }; // if the quantity > 1 update the quantity
+      console.log(updatedProduct);
       updatedProducts[existingProductIndex] = updatedProduct;
     }
-    return { ...state, items: updatedProducts };
+    return { ...state, products: updatedProducts };
   }
 
   return state;

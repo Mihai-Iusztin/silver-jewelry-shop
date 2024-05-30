@@ -10,6 +10,8 @@ export default function Cart() {
   const modalCtx = useContext(ModalContext);
   const cartCtx = useContext(CartContext);
 
+  console.log(cartCtx);
+
   const cartTotal = cartCtx.products.reduce((total, product) => {
     return total + product.price * product.quantity;
   }, 0);
@@ -28,6 +30,8 @@ export default function Cart() {
             name={product.name}
             price={product.price}
             quantity={product.quantity}
+            onRemove={() => cartCtx.removeProduct(product.id)}
+            onAdd={() => cartCtx.addProduct(product)}
           ></CartProduct>
         ))}
       </ul>
@@ -36,7 +40,7 @@ export default function Cart() {
       </h3>
       <div className="cart-btn">
         <Button onClick={handleClose}>Close</Button>
-        <Button>Confirm</Button>
+        {cartCtx.products.length > 0 && <Button>Confirm</Button>}
       </div>
     </Modal>
   );
