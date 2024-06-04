@@ -16,12 +16,12 @@ export default function Confirmation() {
         <Input label="Name" type="text" id="name" />
         <Input label="Email" type="email" id="email" />
         <Input label="Phone" type="number" id="phone" />
-        <div>
+        <div className="input-code">
           <Input label="City" type="text" id="city" />
           <Input label="Street" type="text" id="street" />
           <Input label="Postal Code" type="text" id="postal-code" />
         </div>
-        <div>
+        <div className="input-btn">
           <Button type="button">Close</Button>
           <Button>Send the Order</Button>
         </div>

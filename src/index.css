@@ -148,6 +148,24 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.modal-btn {
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: rgb(5, 5, 111);
+  color: aliceblue;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgb(5, 5, 111);
+}
+
+.modal-btn:hover {
+  cursor: pointer;
+  background-color: rgb(3, 3, 56);
+  color: rgb(245, 241, 10);
+  box-shadow: 0 0.8rem 0.5rem -0.5rem rgb(5, 5, 111);
+  transform: translateY(-0.25rem);
+  transition: all 0.2s;
+}
+
 .cart-modal {
   list-style: none;
 }
@@ -208,24 +226,6 @@ body {
   margin: 1rem 4rem;
 }
 
-.cart-btn button {
-  font-size: 1.7rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  background-color: rgb(5, 5, 111);
-  color: aliceblue;
-  box-shadow: 0 0.5rem 0.5rem -0.5rem rgb(5, 5, 111);
-}
-
-.cart-btn button:hover {
-  cursor: pointer;
-  background-color: rgb(3, 3, 56);
-  color: rgb(245, 241, 10);
-  box-shadow: 0 0.8rem 0.5rem -0.5rem rgb(5, 5, 111);
-  transform: translateY(-0.25rem);
-  transition: all 0.2s;
-}
-
 .addToCart-btn {
   font-size: 1.5rem;
   padding: 0.3rem 0.6rem;
@@ -240,6 +240,48 @@ body {
   box-shadow: 0 0.8rem 0.5rem -0.5rem rgb(5, 5, 111);
   transform: translateY(-0.25rem);
   transition: all 0.2s;
+}
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.modal h3 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.03rem;
+}
+
+.modal h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.input-content label {
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.input-content input {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgb(8, 8, 188);
+}
+
+.input-code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
 }
 
 @keyframes slide {

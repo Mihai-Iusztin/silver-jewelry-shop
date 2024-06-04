@@ -10,10 +10,7 @@ export default function Header() {
   const cartCtx = useContext(CartContext);
   const modalCtx = useContext(ModalContext);
 
-  console.log(modalCtx);
-
   function handleShowCart() {
-    console.log('Show the cart!');
     modalCtx.showCart();
   }
 
